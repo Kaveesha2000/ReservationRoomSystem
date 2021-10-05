@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomsController">
+   <children>
+      <ImageView fitHeight="476.0" fitWidth="684.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/roomspic.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="customerTbl" layoutX="14.0" layoutY="81.0" opacity="0.5" prefHeight="311.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="tblRoomNo" prefWidth="104.0" text="Room No" />
+          <TableColumn fx:id="tblNic" prefWidth="100.0" text="NIC" />
+            <TableColumn fx:id="tblName" prefWidth="127.0" text="Name" />
+            <TableColumn fx:id="tblContact" prefWidth="125.0" text="Contact" />
+            <TableColumn fx:id="tblAddress" prefWidth="149.0" text="Address" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="482.0" layoutY="422.0" onAction="#backToAdminRoom" style="-fx-background-color: #003366;" text="Back To Admin Tasks" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="24.0" onAction="#backToHome3" style="-fx-background-color: #003366;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="71.0" fitWidth="160.0" layoutX="457.0" layoutY="14.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

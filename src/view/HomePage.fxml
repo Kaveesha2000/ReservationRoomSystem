@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePageContext" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #81ecec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <children>
+      <Label layoutX="39.0" layoutY="472.0" text="Do You Like To Spend Your Leisure With Us?">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="300.0" layoutY="545.0" mnemonicParsing="false" onAction="#moveToAdminLogin" style="-fx-background-color: #1c2b7f;" text="Log In As Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="455.0" layoutY="545.0" mnemonicParsing="false" onAction="#moveReceptionistLogin" style="-fx-background-color: #1c2b7f;" text="Log In As Receptionist" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="458.0" fitWidth="642.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/loginpic1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="188.0" layoutY="380.0" text="Hotel Blue Ocean" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="221.0" layoutY="304.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

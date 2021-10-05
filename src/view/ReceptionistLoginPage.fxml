@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionPageContext" prefHeight="372.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistLoginPageController">
+   <children>
+      <ImageView fitHeight="425.0" fitWidth="600.0" layoutY="1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/loginpic1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="236.0" layoutY="23.0" text="Reception Log In" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="txtPassword" layoutX="42.0" layoutY="240.0" prefHeight="25.0" prefWidth="545.0" promptText="Password :- " style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="txtName" layoutX="42.0" layoutY="186.0" onAction="#moveToPw" prefHeight="25.0" prefWidth="545.0" promptText="Name :- " style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Button layoutX="21.0" layoutY="23.0" mnemonicParsing="false" onAction="#backToHome1" style="-fx-background-color: black;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="484.0" layoutY="356.0" mnemonicParsing="false" onAction="#moveToReceptionHome" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: blue;" text="Log In" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="receptionLabel" layoutX="42.0" layoutY="289.0" prefHeight="17.0" prefWidth="545.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="181.0" layoutX="225.0" layoutY="69.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

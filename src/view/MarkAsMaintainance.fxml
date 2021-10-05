@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="markAsMaintainance" prefHeight="425.0" prefWidth="621.0" style="-fx-background-color: #bebebe;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MarkAsMaintainanceController">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="621.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/maintainance.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="13.0" prefHeight="53.0" prefWidth="221.0" text="Maintainance">
+         <font>
+            <Font name="Bodoni MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToReceptionTasks" style="-fx-background-color: black;" text="&lt;&lt;Back To Reception Tasks" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
